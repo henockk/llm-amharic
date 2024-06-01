@@ -4,3 +4,8 @@ sentencepiece
 datasets
 peft
 psycopg2
+bitsandbytes
+python-dotenv
+accelerate
+psycopg2
+pandas

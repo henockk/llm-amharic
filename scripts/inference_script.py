@@ -39,6 +39,17 @@ answer_amharic = tokenizer.decode(outputs_answer[0], skip_special_tokens=True)
 print("Answer:", answer_amharic)
 
 
+# News classification inference
+news_classification = ""
+inputs_question = tokenizer(news_classification, return_tensors="pt").to("cuda")
+
+# Generate answer
+outputs_answer = model.generate(**inputs_question)
+answer_amharic = tokenizer.decode(outputs_answer[0], skip_special_tokens=True)
+print("Answer:", answer_amharic)
+
+
+
 # Summarize text infernce test
 input_text = """
 በሕወትህ በአንድ ባመንክበትና ትክክል በሆነ ዓላማ እስከመጨረሻው ከመጽናት ውጪ ምንም ቁም ነገር ልታከናውን አትችልም፡፡ 
