@@ -96,6 +96,9 @@ This project is licensed under the MIT License.
 ## Contributors
 
 - [@abyt101](https://github.com/AbYT101) - Abraham Teka
+- Melaku Alehegn
+- Grace Nyutu
+- Henock Kinfegebriel
 
 <br>
 
