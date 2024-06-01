@@ -1,0 +1,6 @@
+torch
+transformers
+sentencepiece
+datasets
+peft
+psycopg2
