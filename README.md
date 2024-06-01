@@ -98,7 +98,7 @@ This project is licensed under the MIT License.
 - [@abyt101](https://github.com/AbYT101) - Abraham Teka
 - Melaku Alehegn
 - Grace Nyutu
-- Henock Kinfegebriel
+- Henock Kinfegabrail 
 
 <br>
 
