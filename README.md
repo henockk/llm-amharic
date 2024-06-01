@@ -15,10 +15,11 @@ llm-amharic/
 ├── scripts/
 │ └── inference_script.py
 ├── scripts/
-│ └── finetuning
-│   └─ finetuning.py
-├── pretrain/
-│ └── pretrain.py
+│ ├── data_preprocessing.py
+│ ├── data_preprocessing.py
+│ ├── data_preprocessing.py
+│ ├── data_preprocessing.py
+│ └── finetuning.py
 ├── utils/
 │ ├── data_preprocessing.py
 │ └── fetch_data_from_db.py
@@ -55,10 +56,28 @@ llm-amharic/
     ```sh
     pip install -r requirements.txt
     ```
+4. **Train Tokenizer**
+    ```sh
+    python scripts/train_tokenizer.py
+    ```
+4. **Fine-Tune the Model**
+    ```sh
+    python scripts/train_model.py
+    ```
+5. **Evaluate the model**
+    ```sh
+    python scripts/evaluate_model.py
+    ```
+5. **Deploy the model**
+    ```sh
+    python scripts/deploy_model.py
+    ```
 
 ## Database Setup
 Ensure your PostgreSQL database is set up with the required data. The table should have a column containing the Amharic text data for training.
 
+## Dockerfile 
+Use docker/Dockerfile to containerize and run the entire project
 
     
 ## Contributing
