@@ -9,3 +9,4 @@ python-dotenv
 accelerate
 psycopg2
 pandas
+datasets

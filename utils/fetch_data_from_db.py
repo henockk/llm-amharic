@@ -18,7 +18,7 @@ db_port = os.getenv('DB_PORT')
 def fetch_data_from_database():
     # Database connection details
     db_details = {
-        'dbname': db_host,
+        'dbname': db_name,
         'user': db_user,
         'password': db_password,
         'host': db_host,
@@ -29,10 +29,10 @@ def fetch_data_from_database():
     conn = psycopg2.connect(**db_details)
     
     # Fetch data
-    query = "SELECT text_column FROM raw_text_data;"
+    query = "SELECT article FROM cleaned_articles;"
     df = pd.read_sql(query, conn)
 
     # Close the connection
     conn.close()
     
-    return df['text_column'].tolist()
+    return df['article'].tolist()
